@@ -4699,8 +4699,7 @@ button.swiper-pagination-bullet {
 
 @media (max-width: 480px) {
   .logo__svg {
-    width: 100px;
-    height: 52px;
+    width: 100px !important;
   }
 }
 .fp-viewing-about .page--type-2 .logo__svg,
@@ -5630,11 +5629,12 @@ button.swiper-pagination-bullet {
 }
 
 @media (max-width: 992px) {
-  .n-products-slider-items._mob {
-    display: block;
+  .n-products-slider-items {
+    position: relative;
+    top: 0;
   }
-  .n-products-slider-items:not(._mob) {
-    display: none;
+  .n-products-slider-items__wrapper {
+    justify-content: center !important;
   }
 }
 .n-products-slider-items._type-1 .n-products-slider-items__btn:after {
@@ -5754,11 +5754,6 @@ button.swiper-pagination-bullet {
   padding-right: 16px;
 }
 
-@media (max-width: 992px) {
-  .n-products-slider-items__box:not(:last-child) {
-    padding-right: 0;
-  }
-}
 .n-products-slider-items__box:not(:last-child):after {
   content: "/";
   position: absolute;
@@ -5770,11 +5765,6 @@ button.swiper-pagination-bullet {
   color: #343434;
 }
 
-@media (max-width: 992px) {
-  .n-products-slider-items__box:not(:last-child):after {
-    display: none;
-  }
-}
 .n-products-slider-items__btn {
   background-color: transparent;
   border: 0;
@@ -8152,7 +8142,7 @@ button.swiper-pagination-bullet {
 .social__icon {
   display: none;
   font-size: 28px;
-  color: #a57c37;
+  color: #fff;
 }
 
 @media (max-width: 992px) {
@@ -8448,13 +8438,19 @@ button.swiper-pagination-bullet {
   border-radius: 50%;
   background: #03A469;
   position: relative;
-  width: 80vh;
-  height: 80vh;
+  width: 60vh;
+  height: 60vh;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  filter: blur(125px);
+  opacity: 0.8;
+  box-shadow: 0 0 415px 0 #03A469, 0 0 415px 0 #03A469, 0 0 415px 0 #03A469, 0 0 415px 0 #03A469, 0 0 415px 0 #03A469;
+}
+@media (max-width: 992px) {
+  .promo__light {
+    display: none;
+  }
 }
 .promo__light-small {
   border-radius: 50%;
@@ -8473,11 +8469,22 @@ button.swiper-pagination-bullet {
   bottom: -80px;
   z-index: 9;
 }
+@media (max-width: 992px) {
+  .promo__particle-1 {
+    max-width: 200px;
+  }
+}
 .promo__particle-2 {
   position: absolute;
   right: -100px;
   top: 211px;
   z-index: 9;
+  z-index: 9;
+}
+@media (max-width: 992px) {
+  .promo__particle-2 {
+    max-width: 300px;
+  }
 }
 
 .fp-section {
