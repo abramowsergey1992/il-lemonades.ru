@@ -5108,6 +5108,9 @@ button.swiper-pagination-bullet {
 }
 
 @media (max-width: 992px) {
+  .n-about__product {
+    padding: 0;
+  }
   .n-about__img img {
     margin-left: auto;
     margin-right: auto;
