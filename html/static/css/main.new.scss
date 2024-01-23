@@ -6175,8 +6175,8 @@ button.swiper-pagination-bullet {
 
 .n-products-slider__content {
 	position: relative;
-	padding-top: 145px;
-	padding-bottom: 230px;
+	padding-top: 134px;
+	padding-bottom: 70px;
 	width: 100%;
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -6210,7 +6210,7 @@ button.swiper-pagination-bullet {
 	margin-bottom: 20px;
 	color: #a57c37;
 	text-align: center;
-	min-height: 184px;
+	min-height: 122px;
 }
 
 @media (max-width: 992px) {
@@ -6229,6 +6229,7 @@ button.swiper-pagination-bullet {
 
 .n-products-slider__desc {
 	max-width: 250px;
+	min-height: 163px;
 	font-weight: 300;
 	text-align: left;
 }
@@ -6686,6 +6687,7 @@ button.swiper-pagination-bullet {
 .n-products-slider-el {
 	position: absolute;
 	left: 60px;
+	bottom: 30px;
 	max-width: calc((100% / 2) - 325px);
 }
 
@@ -9716,7 +9718,7 @@ button.swiper-pagination-bullet {
 .n-products-slider-el__img {
 	z-index: 2;
 	position: relative;
-	max-height: calc(100svh - 200px);
+	max-height: calc(100svh - 150px);
 }
 
 .n-products-slider-img__wrapper-bg {
@@ -9761,9 +9763,7 @@ button.swiper-pagination-bullet {
 	}
 }
 
-.n-products-slider-circle {
-	display: none !important;
-}
+
 
 .n-products-slider-prev__img {
 	transition: transform 0.3s;
@@ -9777,4 +9777,84 @@ button.swiper-pagination-bullet {
 
 .social__name {
 	color: #fff;
+}
+
+.fp-viewing-products .page--type-2 .social__item .social__icon::BEFORE {
+	color: #005b39;
+}
+
+
+.page-header {
+	@media (max-height: 650px) {
+		position: absolute;
+	}
+
+	@media (max-width: 992px) {
+		position: absolute;
+	}
+
+}
+
+.product-mango {
+	.n-products-slider-m-nav__arrow._left {
+		background: #c0012d;
+	}
+
+	.n-products-slider-m-nav__arrow._right {
+		background: #087711;
+	}
+}
+
+.product-feioha {
+	.n-products-slider-m-nav__arrow._left {
+		background: #EEAB4E;
+	}
+
+	.n-products-slider-m-nav__arrow._right {
+		background: #bb014d;
+
+	}
+}
+
+.product-vinograd {
+	.n-products-slider-m-nav__arrow._left {
+		background: #087711;
+	}
+
+	.n-products-slider-m-nav__arrow._right {
+		background: #fECC01;
+
+	}
+}
+
+.product-sliva {
+	.n-products-slider-m-nav__arrow._left {
+		background: #bb014d;
+	}
+
+	.n-products-slider-m-nav__arrow._right {
+		background: #e10130;
+
+	}
+}
+
+.product-malina {
+	.n-products-slider-m-nav__arrow._left {
+		background: #fECC01;
+	}
+
+	.n-products-slider-m-nav__arrow._right {
+		background: #EEAB4E;
+
+	}
+}
+
+.product-feioha {
+	.n-products-slider-m-nav__arrow._left {
+		background: #EEAB4E;
+	}
+
+	.n-products-slider-m-nav__arrow._right {
+		background: #cf0924;
+	}
 }
