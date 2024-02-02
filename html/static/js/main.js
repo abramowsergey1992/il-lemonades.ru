@@ -1503,14 +1503,9 @@
 							1 < s && we(c),
 							1 < s &&
 								xe(
-									e
-										.slice(0, s - 1)
-										.concat({
-											value:
-												" " === e[s - 2].type
-													? "*"
-													: "",
-										})
+									e.slice(0, s - 1).concat({
+										value: " " === e[s - 2].type ? "*" : "",
+									})
 								).replace(B, "$1"),
 							t,
 							s < n && Ee(e.slice(s, n)),
@@ -20741,6 +20736,7 @@ function fullpageContainer() {
 
 		function destroyFullPage() {
 			if (!mq.matches) {
+				console.log("ssss");
 				$(".js-main").fullpage({
 					autoScrolling: true,
 					scrollHorizontally: false,
